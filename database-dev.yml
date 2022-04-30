@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driverClassName: org.postgresql.Driver
+    url: jdbc:sqlserver://localhost:1433;databaseName=BatteryPlus_Development;user=sa;password=sql
+    username: sa
+    password: sql
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 20
+      idle-timeout: 30000
+      poolName: HikariBatteryPlusDev
+      max-lifetime: 2000000
+      connection-timeout: 30000
+    jpa:
+      database-platform: org.hibernate.dialect.SQLServer2012Dialect
+      properties:
+        hibernate:
+          show_sql: true
+          format_sql: true
+          use_sql: true
