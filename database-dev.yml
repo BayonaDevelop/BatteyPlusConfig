@@ -1,8 +1,8 @@
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    driverClassName: org.postgresql.Driver
-    url: jdbc:sqlserver://localhost:1433;databaseName=BatteryPlus_Development;user=sa;password=sql
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;databaseName=BatteryPlus_Development
     username: sa
     password: sql
     hikari:
@@ -19,3 +19,4 @@ spring:
           show_sql: true
           format_sql: true
           use_sql: true
+
