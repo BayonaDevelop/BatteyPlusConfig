@@ -2,7 +2,7 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    url: jdbc:sqlserver://localhost:1433;databaseName=BatteryPlus_Development
+    url: jdbc:sqlserver://localhost:1433;databaseName=BatteryPlus_Development;user=sa;password=sql
     username: sa
     password: sql
     hikari:
