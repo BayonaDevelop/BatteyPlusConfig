@@ -14,11 +14,10 @@ spring:
       connection-timeout: 30000
     jpa:
       database-platform: org.hibernate.dialect.SQLServer2012Dialect
+      hibernate:
+        naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       properties:
         hibernate:
           show_sql: true
           format_sql: true
           use_sql: true
-          ejb:
-            naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
-
