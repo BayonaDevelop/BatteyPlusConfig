@@ -18,6 +18,9 @@ spring:
         naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       properties:
         hibernate:
+          jdb:
+            lob:
+              non_contextual_creation: true
           show_sql: true
           format_sql: true
           
