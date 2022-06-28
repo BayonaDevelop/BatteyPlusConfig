@@ -15,11 +15,11 @@ spring:
     jpa:
       database-platform: org.hibernate.dialect.SQLServer2012Dialect
       hibernate:
-        naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-        archive:
-          autodetection: true
+        naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl        
       properties:
         hibernate:
+          archive:
+            autodetection: true
           jdb:
             lob:
               non_contextual_creation: true
