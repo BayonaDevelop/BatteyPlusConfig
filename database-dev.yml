@@ -16,6 +16,8 @@ spring:
       database-platform: org.hibernate.dialect.SQLServer2012Dialect
       hibernate:
         naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        archive:
+          autodetection: true
       properties:
         hibernate:
           jdb:
